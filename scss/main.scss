@@ -1,1 +1,10 @@
-@import "./base/base"
+@import "./abstracuts/variable";
+@import "./abstracuts/utilities.scss";
+
+@import "./base/base";
+
+@import "./components/conponents";
+@import "./components/header";
+
+@import "./layouts/home";
+
