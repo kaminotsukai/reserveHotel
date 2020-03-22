@@ -25,15 +25,15 @@
     letter-spacing: .2rem;
     padding: 2rem 3rem;
 
-    @media screen and (max-width: $bp-medium){
+    @media screen and (max-width: $bp-medium) {
       font-size: 1.8rem;
     }
 
-    @media screen and (max-width: $bp-small){
+    @media screen and (max-width: $bp-small) {
       font-size: 1rem;
     }
 
-    @media screen and (max-width: $bp-medium-1){
+    @media screen and (max-width: $bp-medium-1) {
       font-size: .5rem;
     }
   }
@@ -48,7 +48,7 @@
     height: 2rem;
     margin-right: .5rem;
 
-    @media screen and (max-width: $bp-medium){
+    @media screen and (max-width: $bp-medium) {
       width: 1rem;
       height: 1rem;
       font-size: 1rem;
@@ -58,8 +58,8 @@
   &__location {
     display: flex;
     align-items: center;
-    padding: 3rem 3rem;  
-  } 
+    padding: 3rem 3rem;
+  }
 
   &__rating {
     background-color: var(--color-primary-light);
@@ -93,7 +93,7 @@
   font-size: 1.4rem;
   border-bottom: 2px solid var(--color-primary-light);
 
-  @media screen and (max-width: $bp-medium-1){
+  @media screen and (max-width: $bp-medium-1) {
     font-size: .4rem;
   }
 }
@@ -104,7 +104,7 @@
   display: flex;
   padding: 4rem;
 
-  @media screen and (max-width: $bp-medium){
+  @media screen and (max-width: $bp-medium) {
     flex-direction: column;
   }
 
@@ -116,7 +116,7 @@
     background-color: var(--color-grey-light-1);
     margin: 1rem 1.5rem;
     padding: 2rem 2rem;
-    box-shadow: 0 2rem 5rem rgba(0,0,0,.1);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
   }
 
   &__description {
@@ -125,7 +125,7 @@
     padding: 1rem 1rem 3rem 1rem;
   }
 
-  &__left{
+  &__left {
     flex: 1;
   }
 }
@@ -168,9 +168,10 @@
 
   &__photo {
     width: 4rem;
-    height:4rem;
+    height: 4rem;
     border-radius: 50%;
     border: 2px solid var(--color-grey-light-1);
+
     &:not(:last-child) {
       margin-right: -2rem;
     }
@@ -182,7 +183,7 @@
 .card {
   margin: 1rem 1.5rem 4rem 1.5rem;
   background-color: var(--color-grey-light-1);
-  box-shadow: 0 2rem 5rem rgba(0,0,0,.1);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
   padding: 2rem;
 
   &__comment {
@@ -191,9 +192,9 @@
   }
 
   &__user {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__avatar {

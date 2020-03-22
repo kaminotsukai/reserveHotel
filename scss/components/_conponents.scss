@@ -12,7 +12,7 @@
   align-items: center;
   justify-items: center;
 
-  @media screen and (max-width: $bp-smallest){
+  @media screen and (max-width: $bp-smallest) {
     display: none;
   }
 
