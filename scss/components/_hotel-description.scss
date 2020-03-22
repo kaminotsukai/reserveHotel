@@ -193,3 +193,37 @@
     margin-left: 1rem;
   }
 }
+
+.review-btn {
+  display: block;
+  text-align: center;
+}
+
+////////////////////////////////////////
+// RESERVE
+.reserve-hotel {
+  padding: 4rem;
+  text-align: center;
+
+  &__heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    background-color: var(--color-primary-light);
+    border-radius: 3rem;
+    padding: 1.5rem 8rem;
+    color: var(--color-grey-light-1);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
+  }
+}
