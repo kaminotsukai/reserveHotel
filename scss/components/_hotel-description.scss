@@ -24,6 +24,18 @@
     text-transform: uppercase;
     letter-spacing: .2rem;
     padding: 2rem 3rem;
+
+    @media screen and (max-width: $bp-medium){
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: $bp-small){
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: $bp-medium-1){
+      font-size: .5rem;
+    }
   }
 
   &__stars {
@@ -35,6 +47,12 @@
     width: 2rem;
     height: 2rem;
     margin-right: .5rem;
+
+    @media screen and (max-width: $bp-medium){
+      width: 1rem;
+      height: 1rem;
+      font-size: 1rem;
+    }
   }
 
   &__location {
@@ -74,6 +92,10 @@
   color: var(--color-primary-light);
   font-size: 1.4rem;
   border-bottom: 2px solid var(--color-primary-light);
+
+  @media screen and (max-width: $bp-medium-1){
+    font-size: .4rem;
+  }
 }
 
 ////////////////////////////////
@@ -81,6 +103,10 @@
 .detail {
   display: flex;
   padding: 4rem;
+
+  @media screen and (max-width: $bp-medium){
+    flex-direction: column;
+  }
 
   &__right {
     flex: 0 0 65%;
