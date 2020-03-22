@@ -7,9 +7,9 @@
 .content {
   display: flex;
 
-  @media screen and (max-width: $bp-medium){
+  @media screen and (max-width: $bp-medium) {
     flex-direction: column;
-    
+
   }
 }
 
@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media screen and (max-width: $bp-medium){
+  @media screen and (max-width: $bp-medium) {
     min-height: 3.5rem;
   }
 }

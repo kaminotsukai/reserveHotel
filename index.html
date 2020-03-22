@@ -1,179 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel_Reserve</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <img src="./img/logo.png" alt="logo" class="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel_Reserve</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="./img/logo.png" alt="logo" class="logo" />
 
-      <form action="#" class="search">
-        <input type="text" class="search__input" placeholder="search hotels">
-        <button class="search__button">
-          <img src="img/svg/magnifying-glass.svg" alt="search-icon" class="search__icon">
-        </button>
-      </form>
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="search hotels" />
+          <button class="search__button">
+            <img src="img/svg/magnifying-glass.svg" alt="search-icon" class="search__icon" />
+          </button>
+        </form>
 
-      <div class="user-nav">
-        <div class="user-nav__icon-box">
-          <img src="./img/svg/bookmark.svg" alt="bookmark-icon" class="user-nav__icon">
-          <span class="user-nav__notification">7</span>
+        <div class="user-nav">
+          <div class="user-nav__icon-box">
+            <img src="./img/svg/bookmark.svg" alt="bookmark-icon" class="user-nav__icon" />
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <img src="./img/svg/message.svg" alt="message-icon" class="user-nav__icon" />
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <img
+              src="./img/user-1.jpg"
+              alt="user-icon"
+              class="user-nav__icon circle user-nav__photo"
+            />
+          </div>
         </div>
-        <div class="user-nav__icon-box">
-          <img src="./img/svg/message.svg" alt="message-icon" class="user-nav__icon">
-          <span class="user-nav__notification">7</span>
-        </div>
-        <div class="user-nav__icon-box">
-          <img src="./img/user-1.jpg" alt="user-icon" class="user-nav__icon circle user-nav__photo">
-        </div>
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <img src="./img/svg/home.svg" alt="home-icon" class="side-nav__icon" />
+                hotel
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <img src="./img/svg/aircraft.svg" alt="home-icon" class="side-nav__icon" />
+                flight
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <img src="./img/svg//key.svg" alt="home-icon" class="side-nav__icon" />
+                car
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <img src="./img/svg/map.svg" alt="home-icon" class="side-nav__icon" />
+                tours
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="hotel-view">
+          <div class="gallary">
+            <figure class="gallary__item">
+              <img src="./img/hotel-1.jpg" alt="photo of hotel1" class="gallary__photo" />
+            </figure>
+            <figure class="gallary__item">
+              <img src="./img/hotel-2.jpg" alt="photo of hotel2" class="gallary__photo" />
+            </figure>
+            <figure class="gallary__item">
+              <img src="./img/hotel-3.jpg" alt="photo of hotel3" class="gallary__photo" />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Hotel ras paris</h1>
+            <div class="overview__stars">
+              <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star" />
+              <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star" />
+              <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star" />
+              <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star" />
+              <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star" />
+            </div>
+            <div class="overview__location">
+              <img src="./img/svg/location-pin.svg" alt="" class="side-nav__icon" />
+              <button class="btn-inline">Albuteria, Portogal</button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">421 votes</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail__right">
+              <div class="detail__article">
+                <p class="detail__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.
+                </p>
+                <ul class="list">
+                  <li class="list__item">Close to the beach</li>
+                  <li class="list__item">Close to the beach</li>
+                  <li class="list__item">Close to the beach</li>
+                  <li class="list__item">Close to the beach</li>
+                  <li class="list__item">Close to the beach</li>
+                  <li class="list__item">Close to the beach</li>
+                  <li class="list__item">Close to the beach</li>
+                  <li class="list__item">Close to the beach</li>
+                </ul>
+                <div class="recommend">
+                  <div class="recommend_count">
+                    Lucy and 3 other friends like it.
+                  </div>
+                  <div class="recommend__friends">
+                    <img src="./img/user-3.jpg" alt="recommend__user1" class="recommend__photo" />
+                    <img src="./img/user-4.jpg" alt="recommend__user2" class="recommend__photo" />
+                    <img src="./img/user-5.jpg" alt="recommend__user3" class="recommend__photo" />
+                    <img src="./img/user-6.jpg" alt="recommend__user4" class="recommend__photo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail__left">
+              <div class="card">
+                <p class="card__comment">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco
+                </p>
+                <div class="card__user">
+                  <img src="./img/user-2.jpg" alt="avatar" class="card__avatar" />
+                  <div class="card__user-info">
+                    <p class="card__username">Mary</p>
+                    <time class="card__date" datetime="2018-09-13">Sep 13th, 2018</time>
+                  </div>
+                  <h2 class="card__rating">7.8</h2>
+                </div>
+              </div>
+              <div class="card">
+                <p class="card__comment">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco
+                </p>
+                <div class="card__user">
+                  <img src="./img/user-3.jpg" alt="avatar" class="card__avatar" />
+                  <div class="card__user-info">
+                    <p class="card__username">Sum</p>
+                    <time class="card__date" datetime="2018-09-13">Sep 13th, 2018</time>
+                  </div>
+                  <h2 class="card__rating">7.8</h2>
+                </div>
+              </div>
+              <div class="review-btn">
+                <button class="btn-inline">Show All →</button>
+              </div>
+            </div>
+          </div>
+          <section class="reserve-hotel">
+            <h1 class="reserve-hotel__heading">Good news buy it now!!</h1>
+            <button class="reserve-hotel__btn">Buy!!!</button>
+          </section>
+        </main>
       </div>
-    </header>
-
-    <div class="content">
-      <nav class="sidebar">
-        <ul class="side-nav">
-          <li class="side-nav__item side-nav__item--active">
-            <a href="#" class="side-nav__link">
-              <img src="./img/svg/home.svg" alt="home-icon" class="side-nav__icon">
-              hotel
-            </a>
-          </li>
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
-              <img src="./img/svg/aircraft.svg" alt="home-icon" class="side-nav__icon">
-              flight
-            </a>
-          </li>
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
-              <img src="./img/svg//key.svg" alt="home-icon" class="side-nav__icon">
-              car
-            </a>
-          </li>
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
-              <img src="./img/svg/map.svg" alt="home-icon" class="side-nav__icon">
-              tours
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <main class="hotel-view">
-        <div class="gallary">
-          <figure class="gallary__item">
-            <img src="./img/hotel-1.jpg" alt="photo of hotel1" class="gallary__photo">
-          </figure>
-          <figure class="gallary__item">
-            <img src="./img/hotel-2.jpg" alt="photo of hotel2" class="gallary__photo">
-          </figure>
-          <figure class="gallary__item">
-            <img src="./img/hotel-3.jpg" alt="photo of hotel3" class="gallary__photo">
-          </figure>
-        </div>
-
-        <div class="overview">
-          <h1 class="overview__heading">Hotel ras paris</h1>
-          <div class="overview__stars">
-            <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star">
-            <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star">
-            <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star">
-            <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star">
-            <img src="./img/svg/star.svg" alt="icon" class="overview__icon-star">
-          </div>
-          <div class="overview__location">
-            <img src="./img/svg/location-pin.svg" alt="" class="side-nav__icon">
-            <button class="btn-inline">Albuteria, Portogal</button>
-          </div>
-          <div class="overview__rating">
-            <div class="overview__rating-average">8.6</div>
-            <div class="overview__rating-count">421 votes</div>
-          </div>
-        </div>
-
-        <div class="detail">
-          <div class="detail__right">
-            <div class="detail__article">
-              <p class="detail__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                laborum.
-              </p>
-              <ul class="list">
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Close to the beach</li>
-              </ul>
-              <div class="recommend">
-                <div class="recommend_count">
-                  Lucy and 3 other friends like it.
-                </div>
-                <div class="recommend__friends">
-                  <img src="./img/user-3.jpg" alt="recommend__user1" class="recommend__photo">
-                  <img src="./img/user-4.jpg" alt="recommend__user2" class="recommend__photo">
-                  <img src="./img/user-5.jpg" alt="recommend__user3" class="recommend__photo">
-                  <img src="./img/user-6.jpg" alt="recommend__user4" class="recommend__photo">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="detail__left">
-            <div class="card">
-              <p class="card__comment">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              </p>
-              <div class="card__user">
-                <img src="./img/user-2.jpg" alt="avatar" class="card__avatar">
-                <div class="card__user-info">
-                  <p class="card__username">Mary</p>
-                  <time class="card__date" datetime="2018-09-13">Sep 13th, 2018</time>
-                </div>
-                <h2 class="card__rating">7.8</h2>
-              </div>
-            </div>
-            <div class="card">
-              <p class="card__comment">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              </p>
-              <div class="card__user">
-                <img src="./img/user-3.jpg" alt="avatar" class="card__avatar">
-                <div class="card__user-info">
-                  <p class="card__username">Sum</p>
-                  <time class="card__date" datetime="2018-09-13">Sep 13th, 2018</time>
-                </div>
-                <h2 class="card__rating">7.8</h2>
-              </div>
-            </div>
-            <div class="review-btn">
-              <button class="btn-inline">Show All →</button>
-            </div>
-          </div>
-        </div>
-        <section class="reserve-hotel">
-          <h1 class="reserve-hotel__heading">Good news buy it now!!</h1>
-          <button class="reserve-hotel__btn">Buy!!!</button>
-        </section>
-      </main>
     </div>
-  </div>
-</body>
+  </body>
 </html>
