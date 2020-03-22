@@ -12,6 +12,10 @@
   align-items: center;
   justify-items: center;
 
+  @media screen and (max-width: $bp-smallest){
+    display: none;
+  }
+
   &__input {
     width: 90%;
     border-radius: 30px;

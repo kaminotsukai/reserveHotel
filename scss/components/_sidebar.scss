@@ -1,16 +1,33 @@
 .side-nav {
   list-style: none;
-  margin-top: 3.5rem;
+  
+  @media screen and (max-width: $bp-medium){
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+    align-items: center;
+  }
 
   &__item {
     padding: 2rem 3rem;
-    margin-bottom: .5rem;
     transition: all .6s;
+
+    @media screen and (max-width: $bp-medium){
+      width: 100%;
+      
+      &:not(:last-child) {
+        border-right: 1px solid var(--color-grey-light-4);
+      }
+    }
 
     &:hover,
     &--active {
       transform: translateX(10px);
       background-color: var(--color-primary-light);
+
+      @media screen and (max-width: $bp-medium){
+        transform: translateX(0px);
+      }
     }
   }
 
@@ -22,11 +39,15 @@
     font-weight: 500;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $bp-medium){
+      font-size: 1.4rem;
+    }
   }
 
   &__icon {
     width: 2rem;
     height: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }

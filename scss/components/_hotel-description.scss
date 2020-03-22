@@ -1,0 +1,255 @@
+/////////////////////////////////////
+// 画像
+.gallary {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+////////////////////////////////////
+// overview
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-primary-light-2);
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 2rem 3rem;
+
+    @media screen and (max-width: $bp-medium){
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: $bp-small){
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: $bp-medium-1){
+      font-size: .5rem;
+    }
+  }
+
+  &__stars {
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__icon-star {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+
+    @media screen and (max-width: $bp-medium){
+      width: 1rem;
+      height: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    padding: 3rem 3rem;  
+  } 
+
+  &__rating {
+    background-color: var(--color-primary-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 1.6rem 3rem;
+    align-self: stretch;
+
+    &-average {
+      color: var(--color-grey-light-1);
+      font-size: 2rem;
+    }
+
+    &-count {
+      color: var(--color-grey-light-1);
+    }
+  }
+}
+
+
+////////////////////////////////
+// BUTTON INLINE
+.btn-inline {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: var(--color-primary-light);
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--color-primary-light);
+
+  @media screen and (max-width: $bp-medium-1){
+    font-size: .4rem;
+  }
+}
+
+////////////////////////////////
+// DETAIL
+.detail {
+  display: flex;
+  padding: 4rem;
+
+  @media screen and (max-width: $bp-medium){
+    flex-direction: column;
+  }
+
+  &__right {
+    flex: 0 0 65%;
+  }
+
+  &__article {
+    background-color: var(--color-grey-light-1);
+    margin: 1rem 1.5rem;
+    padding: 2rem 2rem;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.1);
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--color-grey-light-3);
+    padding: 1rem 1rem 3rem 1rem;
+  }
+
+  &__left{
+    flex: 1;
+  }
+}
+
+///////////////////////////////////
+// LIST
+.list {
+  list-style: none;
+  border-bottom: 1px solid var(--color-grey-light-3);
+  padding: 2rem 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    font-size: 1.4rem;
+    flex: 50%;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "\003e";
+      margin-right: .4rem;
+      color: var(--color-primary-light);
+    }
+  }
+}
+
+
+///////////////////////////////////
+// RECOMMEND
+.recommend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+
+  &__count {
+    font-size: inherit;
+  }
+
+  &__photo {
+    width: 4rem;
+    height:4rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-grey-light-1);
+    &:not(:last-child) {
+      margin-right: -2rem;
+    }
+  }
+}
+
+///////////////////////////////////
+// CARD
+.card {
+  margin: 1rem 1.5rem 4rem 1.5rem;
+  background-color: var(--color-grey-light-1);
+  box-shadow: 0 2rem 5rem rgba(0,0,0,.1);
+  padding: 2rem;
+
+  &__comment {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__user {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+
+  &__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__username {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  &__rating {
+    color: var(--color-primary-light);
+    font-size: 2rem;
+  }
+
+  &__user-info {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+}
+
+.review-btn {
+  display: block;
+  text-align: center;
+}
+
+////////////////////////////////////////
+// RESERVE
+.reserve-hotel {
+  padding: 4rem;
+  text-align: center;
+
+  &__heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    background-color: var(--color-primary-light);
+    border-radius: 3rem;
+    padding: 1.5rem 8rem;
+    color: var(--color-grey-light-1);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
+  }
+}

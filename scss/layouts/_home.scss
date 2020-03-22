@@ -6,20 +6,34 @@
 
 .content {
   display: flex;
+
+  @media screen and (max-width: $bp-medium){
+    flex-direction: column;
+    
+  }
 }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+  @media screen and (max-width: $bp-medium){
+    min-height: 3.5rem;
+  }
 }
 
 .hotel-view {
   background-color: var(--color-grey-light-3);
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.reserve-hotel {
+  background-color: var(--color-grey-light-1);
+  min-height: 20rem;
 }
